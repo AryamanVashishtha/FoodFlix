@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(47, 47, 47);
+}
+/* logodiv styling */
+#logo{
+    margin: 10px 34px;
+    width: 40px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 10px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px ;
+    
+}
+.navbar{
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+/* navbar list styling */
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+}
+.navbar ul li a{
+    display: block;
+    margin: 2px 15px;
+    padding: 12px 19px;
+    border-radius: 20px;
+    color: white;
+    /* border: 2px solid black; */
+}
+.navbar ul li a:hover{
+    color: rgb(0, 0, 0) ;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    background: url('pexels-shenyi-4396298.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 600px;
+    width: 100%;
+    z-index: -2;
+    filter: blur(1px);
+    filter: brightness(70%);
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+/* Services */
+
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(255, 239, 244);
+}
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 200px;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(/pexels-chan-walrus-958545.jpg) center center/cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.2;
+}
+.client-item{
+    padding: 2px 40px;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url('pexels-snapwire-618613.jpg') center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+    color: white;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+/* utility class */
+.primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+
+}
+.btn{
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 6px;
+    margin: 20px 20px ;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}

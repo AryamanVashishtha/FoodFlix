@@ -1,0 +1,62 @@
+/* navigation */
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 0px;
+}
+.navbar ul li a{
+    display: block;
+    margin: 0px;
+    padding: 2px 9px;
+    border-radius: 20px;
+    color: white;
+    /* border: 2px solid black; */
+}
+/* home section */
+#home{
+    height: 370px;
+    padding: 3px 70px;
+}
+#home p{
+    font-size: 1.3rem;
+}
+#home::before{
+    height: 460px;
+}
+/* services section */
+#services{
+    flex-direction: column;
+}
+#services.box{
+
+}
+#services .box{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin: 3px 6px;
+}
+
+/* clients section */
+#clients{
+    flex-wrap: wrap;
+} 
+#clients img{
+    padding: 0 6px ;
+}
+#clients #az{
+    
+}
+#clients #fb{
+    display: none;
+}
+#clients #apple{
+    height: 150px;
+}
+/* contact us section  */
+#contact-box form{
+    width: 80%;
+}
+/* footer  */
+/* utility classes */
+.primary{
+    font-size:2.8rem ;
+}
